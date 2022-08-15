@@ -1,0 +1,148 @@
+.App {
+  /* text-align: center; */
+  margin-left: 90px;
+  margin-right: 90px
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.head {
+  display: flex;
+  width: 100%;
+  margin: 8px 0px;
+}
+
+.dealer-name {
+  color: #64748b;
+  font-weight: 400;
+}
+
+label {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.main-heading {
+  margin-bottom: 15px;
+  background: #f2f2ff;
+  padding: 16px 0px;
+  font-size: 20px;
+}
+
+.main-heading h3 {
+  margin: 0 !important;
+}
+
+th {
+  padding: 15px 0px !important;
+}
+
+button.find-btn {
+  position: relative;
+  border: 1px solid #2d67c1;
+  width: 80px;
+  border-radius: 6px;
+  background: #fff;
+  color: #2d68c2;
+  height: 35px;
+  margin-left: 10px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+input[type="search"] {
+  border: 1px solid #e7e7fe;
+  border-radius: 5px;
+  width: 300px;
+  height: 35px;
+  padding: 0px 5px;
+}
+
+.find-btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.find-btn:hover,
+.find-btn:focus,
+.find-btn:active {
+  background: #2d67c1 !important;
+  outline: 0px auto -webkit-focus-ring-color !important;
+  outline-offset: 0px !important;
+  /* border-color: #1f3366; */
+  color: #fff;
+  box-shadow: none !important;
+}
+
+.find-btn:hover:after,
+.find-btn:active:after,
+.find-btn:focus:after {
+  width: 100% !important;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+
+thead tr {
+  text-align: center;
+  background: #f2f2ff;
+}
+
+tr {
+  text-align: center;
+}
+
+tbody tr td {
+  color: #64748b;
+  height: 60px;
+  align-items: center;
+  text-align: center;
+  /* padding: 17px 0px !important; */
+}
